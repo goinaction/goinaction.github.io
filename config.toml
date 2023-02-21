@@ -1,0 +1,39 @@
+baseURL = 'http://goinaction.github.io'
+#IsMultiLingual = true
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+theme = "hugo-geekdoc"
+
+# Take last modified automatically from git
+enableGitInfo = true
+
+pluralizeListTitles = false
+
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
+
+# Required if you want to render robots.txt template
+enableRobotsTXT = true
+[params]
+    geekdocLogo = "images/gopher.svg"
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    title = 'Go In Action'
+    weight = 1
+
+# Needed for mermaid shortcodes
+[markup]
+  [markup.goldmark.renderer]
+    # Needed for mermaid shortcode
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 9
+
+[taxonomies]
+   tag = "tags"
+[minify]
+  disableHTML = true

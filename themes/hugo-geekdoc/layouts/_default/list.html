@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.GeekdocAlign | lower) }}"
+  >
+    <h1>{{ partial "utils/title" . }}</h1>
+{{- if .Params.lastEdit }}
+    <div id="lastEdit">(last updated {{.Lastmod.Format "Jan 02, 2006"}})</div>
+{{- end }}
+{{if eq (len .Content) 0}}
+{{- partial "shortcodes/children.html" (dict
+  "context" .
+  "containerstyle" "ul"
+  "style"          "li"
+  "description"    "true"
+  "depth"          1
+  "showhidden"     false
+  "sort"           "URL"
+) }}
+{{- end }}
+    {{ partial "utils/content" . }}
+  </article>
+{{ end }}
