@@ -960,33 +960,11 @@ kbd {
   white-space: nowrap;
 }
 
-q {
-  display: inline-block;
-  font-family: monospace;
-  background-color: var(--body-font-color);
-  color: var(--body-background);
-  border-radius: .5rem;
-  /*
-  border-top: 2px dashed var(--body-font-color);
-  border-bottom: 2px dashed var(--body-font-color);
-  */
-  line-height: 1rem;
-  font-weight: 600;
-  letter-spacing: .05rem;
-  padding: .2rem;
-  position: relative;
-}
-
-q:before,
-q:after {
-  content: none;
-}
-
 .uinput {
   display: inline-block;
   font-family: monospace;
   color: var(--body-font-color);
-  border-bottom: .1rem dashed var(--body-font-color);
+  border-bottom: 2px dashed var(--body-font-color);
   line-height: 1rem;
   font-weight: 600;
   letter-spacing: .04rem;
