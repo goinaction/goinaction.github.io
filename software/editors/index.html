@@ -45,7 +45,7 @@
 <meta property="article:section" content="Software" />
     <meta
       property="article:modified_time"
-      content="2023-02-21T01:57:15-05:00"
+      content="2023-02-22T01:38:14-05:00"
     />
 
 
@@ -63,7 +63,7 @@
       "url" : "http://goinaction.github.io/software/editors/",
       "headline": "IDEs and Editors",
       "description": "Tools to write Go code",
-      "wordCount" : "385",
+      "wordCount" : "387",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -74,7 +74,7 @@
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-02-21T01:57:15.00Z",
+      "dateModified": "2023-02-22T01:38:14.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Go In Action",
@@ -551,7 +551,7 @@
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>IDEs and Editors</h1>
-    <div id="lastEdit">(last updated Feb 21, 2023)</div>
+    <div id="lastEdit">(last updated Feb 22, 2023)</div>
     <p>In order to write source code, you need something to type it into. You can of course use any text editor for this, but we highly recommend an Integrated Development Environment, or at least a pluggable text editor designed with writing code in mind.</p>
 <div class="gdoc-page__anchorwrap">
     <h2 id="ides">
@@ -570,11 +570,42 @@
         </a>
     </h3>
 </div>
+<style>
+    .image-gallery {overflow: auto; margin-left: -1%!important;}
+    .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
+    .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
+    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
+    .image-gallery li a img {width: 100%; display: block;}
+</style>
+
+
+<ul class="image-gallery">
+<li>
+      <a href="http://goinaction.github.io/gallery/vscode/vscode1_hua5d4d267e8e8f93923357c9f787cb826_502561_1600x1600_fit_q50_box_3.png" title="vscode1" class="lightbox-image">
+        <img src="http://goinaction.github.io/gallery/vscode/vscode1_hua5d4d267e8e8f93923357c9f787cb826_502561_300x300_fill_q50_box_smart1_3.png" alt="vscode1" title="vscode1">
+        
+      </a>
+    </li>
+<li>
+      <a href="http://goinaction.github.io/gallery/vscode/vscode2_hu0f756808a04e0ffe4068515c2780fea3_223722_1600x1600_fit_q50_box_3.png" title="vscode2" class="lightbox-image">
+        <img src="http://goinaction.github.io/gallery/vscode/vscode2_hu0f756808a04e0ffe4068515c2780fea3_223722_300x300_fill_q50_box_smart1_3.png" alt="vscode2" title="vscode2">
+        
+      </a>
+    </li>
+<li>
+      <a href="http://goinaction.github.io/gallery/vscode/vscode3_hu5bedbbbe889b0330bfb3c1da08e769bd_675451_1600x1600_fit_q50_box_1.gif" title="vscode3" class="lightbox-image">
+        <img src="http://goinaction.github.io/gallery/vscode/vscode3_hu5bedbbbe889b0330bfb3c1da08e769bd_675451_300x300_fill_q50_box_smart1_1.gif" alt="vscode3" title="vscode3">
+        
+      </a>
+    </li>
+
+</ul>
+
 <ul>
 <li><a href="https://code.visualstudio.com/" target="_blank">Homepage</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=golang.go" target="_blank">Download the Go Extension</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=golang.go" target="_blank">Download the Go Extension</a>
+Visual Studio Code (VSCode) is a powerful free cross-platform IDE based on Electron. It has excellent Go support, thanks to a Go extension maintained by the Go team at Google. It is our primary recommendation since it is both feature-rich and free.</li>
 </ul>
-<p>Visual Studio Code (VSCode) is a powerful free cross-platform IDE based on Electron. It has excellent Go support, thanks to a Go extension maintained by the Go team at Google. It is our primary recommendation since it is both feature-rich and free.</p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="setup">
         Setup
@@ -587,19 +618,24 @@
 <ol>
 <li>Install VSCode from thw download link above.</li>
 <li>Download and install the Go extension.</li>
-<li><em>(optional)</em> Create a folder such as <q>home/workspaces</q> or <q>Documents/code</q> to serve as a home base for all of your code projects, which are called &ldquo;Workspaces&rdquo; in VSCode parlance. This can be helpful in keeping everything together, but you can also create workspaces wherever you like.</li>
+<li><em>(optional)</em> Create a folder such as <span class="uinput" aria-label="&#x1F4CB;" data-balloon-length="smallest" data-balloon-pos="right">home/workspaces</span>
+ or <span class="uinput" aria-label="&#x1F4CB;" data-balloon-length="smallest" data-balloon-pos="right">Documents/code</span>
+ to serve as a home base for all of your code projects, which are called &ldquo;Workspaces&rdquo; in VSCode parlance. This can be helpful in keeping everything together, but you can also create workspaces wherever you like.</li>
 <li>Open VSCode and, navigate to <kbd>File ⇒ Add Folder To Workspace&hellip;</kbd>.</li>
 <li>Navigate to wherever you&rsquo;d like to store your first workspace directory, but <em>don&rsquo;t click the Add button yet</em>. If you added a special folder in step #3, this is where you&rsquo;d start.</li>
-<li>Once you&rsquo;ve selected a location for the new Workspace, click <kbd>New Folder</kbd> and create a folder called <q>goinaction</q>.</li>
+<li>Once you&rsquo;ve selected a location for the new Workspace, click <kbd>New Folder</kbd> and create a folder called <span class="uinput" aria-label="&#x1F4CB;" data-balloon-length="smallest" data-balloon-pos="right">goinaction</span>
+.</li>
 <li>Click <kbd>Add</kbd> button to add the folder to your new, unnamed workspace.</li>
-<li>Click <kbd>File ⇒ Save Workspace As&hellip;</kbd> and accept the default name, which should be something like <q>goinaction.code-workspace</q></li>
+<li>Click <kbd>File ⇒ Save Workspace As&hellip;</kbd> and accept the default name, which should be something like <kbd>goinaction.code-workspace</kbd></li>
 <li>Open the &ldquo;command palette&rdquo;, which is VSCode&rsquo;s general-purpose autocompleting shortcut menu with <kbd>⌘</kbd>-<kbd>shift</kbd>-<kbd>p</kbd> or <kbd><img
   src="/images/windows_key.svg"
   alt="Example image"
   
 /></kbd>-<kbd>shift</kbd>-<kbd>p</kbd></li>
-<li>Type <q>go mod</q>, which will select the <kbd>Go: Initialize go mod</kbd> option and hit <kbd>Enter</kbd></li>
-<li>Enter <q>goinaction</q> when prompted.</li>
+<li>Type <span class="uinput" aria-label="&#x1F4CB;" data-balloon-length="smallest" data-balloon-pos="right">go mod</span>
+, which will select the <kbd>Go: Initialize go mod</kbd> option and hit <kbd>Enter</kbd></li>
+<li>Enter <span class="uinput" aria-label="&#x1F4CB;" data-balloon-length="smallest" data-balloon-pos="right">goinaction</span>
+ when prompted.</li>
 <li>Finally, save the new go.mod file.</li>
 </ol>
 <p>Now you are in a fresh new Workspace and ready to follow along with the book. You can create a new folder for each exercise from the file explorer menu to the left and add <em>main.go</em> files for each one.</p>
@@ -690,7 +726,28 @@
     </div>
 
     
-  <script defer src="/js/search-fd04590d.bundle.min.js"></script>
+  <script defer src="/js/search-fd04590d.bundle.min.js"></script><script defer type="text/javascript" src="/js/lightbox.js"></script>
+  <script type="text/javascript" src="/js/clipboard.js"></script>
+  <script type="text/javascript">
+      var clipboard = new ClipboardJS('.uinput', {
+          text: function(elem) {
+              return elem.innerText;
+          }
+      });
+      clipboard.on('success', function(e) {
+          var el = e.trigger;
+          el.setAttribute('aria-label', '\u{2705}');
+          setTimeout(function () {
+              el.removeAttribute("aria-label");
+          }, 800);
+        setTimeout(function () {
+            el.setAttribute('aria-label', "\u{1F4CB}");
+        }, 3000);
+      });
+  </script>
+  <link rel="stylesheet" href="/css/lightbox.css">
+  <link rel="stylesheet" href="/css/balloon.min.css">
+
 
   </body>
 </html>

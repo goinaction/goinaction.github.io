@@ -656,7 +656,28 @@
     </div>
 
     
-  <script defer src="/js/search-fd04590d.bundle.min.js"></script>
+  <script defer src="/js/search-fd04590d.bundle.min.js"></script><script defer type="text/javascript" src="/js/lightbox.js"></script>
+  <script type="text/javascript" src="/js/clipboard.js"></script>
+  <script type="text/javascript">
+      var clipboard = new ClipboardJS('.uinput', {
+          text: function(elem) {
+              return elem.innerText;
+          }
+      });
+      clipboard.on('success', function(e) {
+          var el = e.trigger;
+          el.setAttribute('aria-label', '\u{2705}');
+          setTimeout(function () {
+              el.removeAttribute("aria-label");
+          }, 800);
+        setTimeout(function () {
+            el.setAttribute('aria-label', "\u{1F4CB}");
+        }, 3000);
+      });
+  </script>
+  <link rel="stylesheet" href="/css/lightbox.css">
+  <link rel="stylesheet" href="/css/balloon.min.css">
+
 
   </body>
 </html>
