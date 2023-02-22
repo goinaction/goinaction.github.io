@@ -982,6 +982,25 @@ q:after {
   content: none;
 }
 
+.uinput {
+  display: inline-block;
+  font-family: monospace;
+  color: var(--body-font-color);
+  border-bottom: .1rem dashed var(--body-font-color);
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: .04rem;
+  padding-bottom: .2rem;
+  cursor: pointer;
+  --balloon-color: #ccc;
+  --balloon-font-size: 1rem;
+}
+
+[data-balloon][data-balloon-length='smallest']:after {
+  white-space: normal;
+  width: 10px !important;
+}
+
 /*
 q:before,
 q:after {

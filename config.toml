@@ -1,5 +1,6 @@
 baseURL = 'http://goinaction.github.io'
 #IsMultiLingual = true
+assetDir = 'static'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 theme = "hugo-geekdoc"
